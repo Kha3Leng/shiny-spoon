@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import org.controlsfx.control.textfield.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="475.0" prefWidth="674.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Label fx:id="intro" alignment="CENTER" contentDisplay="CENTER" layoutX="35.0" layoutY="127.0" prefHeight="61.0" prefWidth="624.0" text="Make the playlist of your dreams based on a song." textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="127.0">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="header" alignment="CENTER" layoutX="-26.0" layoutY="2.0" prefHeight="186.0" prefWidth="700.0" text="LIVE WITH MUSIC" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font>
+      </Label>
+      <CustomTextField fx:id="input" layoutX="70.0" layoutY="217.0" onAction="#acceptInput" prefHeight="41.0" prefWidth="554.0" promptText="Type a track title" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="50.0" />
+      <Label fx:id="suggestions" layoutX="172.0" layoutY="285.0" prefHeight="41.0" prefWidth="379.0" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
